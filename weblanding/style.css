@@ -1,0 +1,443 @@
+:root {
+  --primary: black;
+  --bg: white;
+}
+
+* {
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+  color: black;
+  background-color: var(--bg);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.navbar-first {
+    position: fixed;
+    width: 120rem;
+}
+
+.navbar-first .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2%;
+  background-color: white;
+  border-bottom: 1, 7px solid black;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  margin-bottom: 1rem;
+}
+
+.navbar-first .navbar img {
+    height: 25px;
+}
+
+.navbar-first .navbar .navbar-nav a {
+  display: inline-block;
+  margin: 0 1rem;
+  color: var(--primary);
+  font-size: 1.5rem;
+}
+
+.navbar-first .navbar .navbar-nav a:hover {
+    background-color: var(--primary);
+    border-radius: 10px;
+    color: var(--bg);
+}
+
+.navbar-first .line-navbar {
+    background-color: black;
+    border: 2px solid black;
+    margin-top: -1rem;
+}
+
+.container {
+    display: flex;
+    margin-top: 7rem;
+    margin-left: 10rem;
+}
+
+.container img {
+    height: 50rem;
+}
+
+#LBWKVideo {
+    background-color: black;
+    margin-top: 5rem;
+    width: 1902px;
+    height: 800px;
+}
+
+.about {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.about h1 {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+    color: black;
+}
+
+.about img {
+    width: 100rem;
+    margin-left: 8.1rem;
+}
+
+.about .row {
+    margin-top: 5rem;
+}
+
+.about .row p{
+    color: var(--primary);
+    font-size: 1.8rem;
+    text-align: center;
+    width: 70rem;
+    margin-left: 25rem;
+    margin-bottom: 2rem;
+}
+
+.collection-header h1 {
+    color: black;
+    font-size: 3rem;
+    margin-bottom: 5rem;
+}
+
+.container-2 {
+    display: flex;
+    gap: 5rem;
+    background-color: var(--primary);
+    width: 70rem;
+    height: 30rem;
+    border-radius: 50px;
+    margin-left: 25rem;
+    margin-top: 5rem;
+    box-shadow: black;
+}
+
+.container-2 .row {
+    margin-top: 6rem;
+    margin-left: 10rem;
+}
+
+.container-2 .row h1{
+    color: var(--bg);
+    text-align: center;
+}
+
+.container-2 .row p {
+    color: var(--bg);
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.container-2 img {
+    height: 15rem;
+    margin-top: 8rem;
+    margin-right: 5rem;
+    border-radius: 30px;
+}
+
+.container-2 img:hover {
+    transform: scale(1.2);
+    rotate: 8deg;
+}
+
+.scroll-container {
+    background-color: black;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 5px;
+    margin-top: 5rem;
+}
+  
+.scroll-container img {
+    padding: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 1880px;
+}
+
+.footer {
+    margin-left: 10rem;
+}
+
+.footer .container-3 .row {
+    margin-top: 3rem;
+    margin-left: 5rem;
+}
+
+.footer .container-3 {
+    display: flex;
+}
+
+.footer img {
+    margin-left: -2.7rem;
+}
+
+.footer .container-3 img {
+    height:300px;
+    width: 300px;
+    margin-left: 25rem;
+}
+
+.footer .container-3 .row h1 {
+    color: var(--primary);
+    margin-bottom: 2rem;
+}
+
+.footer .container-3 .row li {
+    margin-top: 1rem;
+    color: var(--primary);
+    font-size: 1rem;
+}
+
+
+.refresh-button img{
+    position: fixed;
+    margin-top: 47rem;
+    margin-left: 104rem;
+    height: 200px;
+  }
+
+  .refresh-button a {
+    font-size: 3rem;
+    position: fixed;
+    margin-top: 45rem;
+    margin-left: 110rem;
+    height: 300px;
+    opacity: 0;
+  }
+
+/*For Mobile Device*/
+@media only screen and (max-width: 560px) and (max-width: 900px) {
+      .navbar-first {
+          position: fixed;
+          width: 25rem;
+      }
+      
+      .navbar-first .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2%;
+        background-color: white;
+        border-bottom: 1, 7px solid black;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 99999;
+        margin-bottom: 1rem;
+        margin-top: -0.5rem;
+      }
+      
+      .navbar-first .navbar img {
+          height: 12px;
+      }
+      
+      .navbar-first .navbar .navbar-nav a {
+        display: inline-block;
+        margin: 0 1rem;
+        color: var(--primary);
+        font-size: 0.8rem;
+      }
+      
+      .navbar-first .navbar .navbar-nav a:hover {
+          background-color: var(--primary);
+          border-radius: 10px;
+          color: var(--bg);
+      }
+      
+      .navbar-first .line-navbar {
+          background-color: black;
+          border: 1px solid black;
+          margin-top: -1rem;
+      }
+      
+      .container {
+          display: flex;
+          margin-top: 4rem;
+          margin-left: 5.1rem;
+      }
+      
+      .container img {
+          height: 11rem;
+      }
+      
+      #LBWKVideo {
+          background-color: black;
+          margin-top: 2rem;
+          width: 392px;
+          height: 180px;
+          margin-left: 3.55rem;
+      }
+      
+      .about {
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+      }
+      
+      .about h1 {
+          font-size: 1.1rem;
+          margin-bottom: 1.5rem;
+          margin-left: 7.2rem;
+          text-align: center;
+          color: black;
+      }
+      
+      .about img {
+          width: 22rem;
+          margin-left: 4.5rem;
+      }
+      
+      .about .row {
+          margin-top: 1rem;
+      }
+      
+      .about .row p{
+          color: var(--primary);
+          font-size: 0.55rem;
+          text-align: center;
+          width: 17rem;
+          margin-left: 7.2rem;
+          margin-bottom: 1rem;
+      }
+      
+      .collection-header h1 {
+          color: black;
+          font-size: 1.1rem;
+          margin-left: 7rem;
+          text-align: center;
+          margin-bottom: 2rem;
+      }
+      
+      .container-2 {
+          display: flex;
+          gap: 1rem;
+          background-color: var(--primary);
+          width: 23rem;
+          height: 10rem;
+          border-radius: 20px;
+          margin-left: 4.35rem;
+          box-shadow: black;
+          margin-top: 2rem;
+      }
+      
+      .container-2 .row {
+          margin-top: 1rem;
+          margin-left: 2rem;
+      }
+      
+      .container-2 .row h1{
+          color: var(--bg);
+          text-align: center;
+          font-size: 0.7rem;
+          margin-right: 2rem;
+      }
+      
+      .container-2 .row p {
+          color: var(--bg);
+          text-align: center;
+          font-size: 0.3rem;
+          margin-right: 2rem;
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+      }
+      
+      .container-2 img {
+          height: 7rem;
+          margin-top: 1.5rem;
+          margin-right: 2rem;
+          border-radius: 10px;
+      }
+      
+      .container-2 img:hover {
+          transform: scale(1.1);
+          rotate: 7deg;
+      }
+      
+      .scroll-container {
+          background-color: black;
+          overflow: auto;
+          white-space: nowrap;
+          margin-left: 3.6rem;
+          margin-right: -3.7rem;
+          align-items: center;
+          margin-top: 2rem;
+      }
+      
+      .scroll-container img {
+          padding: 8px;
+          width: 380px;
+          margin-left: -0.0001rem;
+          align-items: center;
+      }
+      
+      .footer {
+          margin-left: 5rem;
+      }
+      
+      .footer .container-3 .row {
+          margin-top: 1rem;
+      }
+      
+      .footer .container-3 {
+          display: flex;
+      }
+      
+      .footer img {
+          margin-left: -1rem;
+      }
+      
+      .footer .container-3 img {
+          height:100px;
+          width: 100px;
+          margin-left: 3rem;
+          margin-top: 2rem;
+      }
+      
+      .footer .container-3 .row h1 {
+          color: var(--primary);
+          margin-bottom: 1rem;
+          font-size: 1rem;
+          margin-left: 1rem;
+      }
+      
+      .footer .container-3 .row li {
+          margin-top: 0.1rem;
+          color: var(--primary);
+          font-size: 0.5rem;
+          margin-left: 1rem;
+      }
+
+      .refresh-button img {
+        position: fixed;
+        margin-top: 50rem;
+        margin-left: 1rem;
+        height: 50px;
+      }
+
+      .refresh-button a {
+        font-size: 3rem;
+        position: fixed;
+        margin-top: 45rem;
+        margin-left: 110rem;
+        height: 300px;
+        opacity: 0;
+      }
+}
